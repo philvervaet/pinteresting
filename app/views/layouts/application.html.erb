@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pinteresting</title>
+  <title>vervespace</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <%= favicon_link_tag ("vs-favicon.ico") %>
+
 </head>
 <body>
 		<%= render 'layouts/header' %>
+		<%= render 'layouts/carousel' %>
 		<div class="container">
 			<% flash.each do |name, msg| %>
 			<%= content_tag(:div, msg, class: "alert alert-info") %>

@@ -6,6 +6,7 @@ $navbar-height:							45px;
 $navbar-default-bg: 				white;
 $navbar-default-brand-color:	#c0392b;
 $brand-primary:  #c0392b;
+$navbar-margin-bottom: 0px;
 $jumbotron-bg:   white;
 
 @import'bootstrap';
@@ -17,4 +18,15 @@ text-align: center;
 
 .navbar-brand {
 	font-weight: bold;
+}
+
+.jumbotron {
+     position: relative;
+     background: url(vs-background.png);
+     opacity: 1;
+     padding: 80px;
+     margin-bottom: 0px;
+     font-size: 10px;
+     font-weight: 300;
+     line-height: 1.5;
 }
