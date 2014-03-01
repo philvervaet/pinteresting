@@ -17,7 +17,7 @@
     <ul class="nav navbar-nav navbar-right">
       <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "About the Artists", about_path %></li>
-      <!--<li><%= link_to "Portfolio", project_path %></li> -->
+      <li><%= link_to "Contact for Quotes", contact_path %></li>
       <% if user_signed_in? %>
         <li><%= link_to new_pin_path do %>
           <span class="glyphicon glyphicon-plus"></span> New Piece
